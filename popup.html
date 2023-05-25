@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Extension</title>
+    <style>
+        body {
+            width: 400px;
+            font-family: Arial;
+            font-size: 14px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+            border: none;
+            background: #0078FF;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005DCC;
+        }
+
+        .message {
+            margin-top: 10px;
+            padding: 5px;
+            background: #EFEFEF;
+            border: 1px solid #CCC;
+            font-size: 12px;
+            display: none;
+        }
+
+        .result {
+            margin-top: 10px;
+            width: 90%;
+            height: 100px;
+            padding: 5px;
+            background: #dcd6d6;
+            border: 1px solid #171616;
+            font-size: 12px;
+            /* display: none; */
+        }
+
+        #showButton {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>添加内容</h2>
+    <label for="textInput">请输入：</label>
+    <input type="text" id="textInput"><br>
+    <button id="addButton">保存</button>
+    <div class="message"></div>
+
+    <h2>显示内容</h2>
+    <div id="savedContent"></div>
+
+    <button id="showButton">显示</button>
+    <div class="result"></div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
